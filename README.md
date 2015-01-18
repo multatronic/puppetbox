@@ -16,6 +16,7 @@ The following software is installed through puppet:
 * Dropbox (just downloads the installer for now)
 * VLC
 * Sublime text 3
+* Python3 with pip3 and click library
 * Some custom commands: 
   * Haste (type `haste [file]` in the CLI to post the contents of a file to hastebin)
 
