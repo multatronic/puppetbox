@@ -13,6 +13,7 @@ It installs the following:
 * Transmission bittorrent client
 * QtCreator
 * Dropbox (just downloads the installer for now)
+* Vlc
 
 It has been tested with a Ubuntu trusty64 box.
 

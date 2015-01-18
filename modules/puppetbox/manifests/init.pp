@@ -18,7 +18,8 @@
     include qtcreator
     include apt
     include dropbox
-    # include gnome-encfs-manager
+    include vlc
+    include gnome-encfs-manager
 
     class{ 'git' :
         gitUser     => $gitUser,
