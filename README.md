@@ -10,6 +10,7 @@ It installs the following:
 * Apache 
 * PHP5
 * MySQL
+* Transmission bittorrent client
 
 It has been tested with a Ubuntu trusty64 box.
 

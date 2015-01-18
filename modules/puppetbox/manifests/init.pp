@@ -14,6 +14,7 @@
     include zsh
     include apache
     include php
+    include transmission
 
     class{ 'git' :
         gitUser     => $gitUser,
