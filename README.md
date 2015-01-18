@@ -23,14 +23,14 @@ Requirements
 Usage
 -----
 
-Clone this repository and run `git submodule init && git submodule update`, this will pull in the git submodules containing certain configurations (e.g. vimrc files). 
+Clone this repository and run `git submodule init && git submodule update`, this will pull in the git submodules containing certain configurations (e.g. vimrc files). Run this command again in `/modules/zsh/files/zprezto` to pull in the prezto submodules.
 
 Next, fill in the details for you configuration in manifests/site.pp, which should look something like this:
 
 ```
 class { "puppetbox": 
   gitUser   => "Alan Smithee",
-  gitEmail  => "Smithee@spamme.com"
+  gitEmail  => "Smithee@spam-me.com"
 }
 ```
 
