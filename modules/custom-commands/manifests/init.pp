@@ -1,4 +1,9 @@
 class custom-commands {
+
+	package { 'xsel':
+		ensure => latest,
+	}
+
 	file { '/usr/bin/haste' :
 		ensure 	=> file,
 		source 	=> 'puppet:///modules/custom-commands/haste/haste.py',

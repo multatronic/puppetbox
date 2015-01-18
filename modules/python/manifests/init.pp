@@ -1,16 +1,13 @@
 class python {
-
-	$pip_libs = ['click', 'xsel']
-
-	exec { 'install_libs' : 
-		command => "pip3 install $pip_libs",
+	exec { 'install_click' : 
+		command => "pip3 install click",
 	}
 
-	$python_package = ['python3', 'python3-pip']
+	$python_package = ["python3", "python3-pip"]
 	package { $python_package:
 		ensure => latest,
 	}
 	->
-	Exec['install_libs']
+	Exec['install_click']
 
 }

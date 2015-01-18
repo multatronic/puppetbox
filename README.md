@@ -17,6 +17,7 @@ The following software is installed through puppet:
 * VLC
 * Sublime text 3
 * Python3 with pip3 and click library
+* Xsel (used by custom command haste)
 * Some custom commands: 
   * Haste (type `haste [file]` in the CLI to post the contents of a file to hastebin)
 
