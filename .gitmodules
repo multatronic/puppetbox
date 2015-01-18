@@ -1,0 +1,3 @@
+[submodule "modules/vim/files/vim-config"]
+	path = modules/vim/files/vim-config
+	url = https://github.com/multatronic/vim-config
