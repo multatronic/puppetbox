@@ -1,4 +1,4 @@
- class puppetbox {
+ class puppetbox ($gitUser, $gitEmail) {
     # Set paths
     Exec {
         path => ["/usr/bin", "/bin", "/usr/sbin", "/sbin", "/usr/local/bin", "/usr/local/sbin"]
@@ -9,6 +9,12 @@
         command => "apt-get update",
     }
 
+    # Set up the packages we want
     include vim
     include zsh
+
+    class{ 'git' :
+        gitUser     => $gitUser,
+        gitEmail    => $gitEmail,
+    }
 }

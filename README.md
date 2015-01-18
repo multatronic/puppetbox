@@ -4,9 +4,9 @@ Config
 ====================
 
 It installs the following:
-* ViM with plugins
-* Zsh with prezto
-
+* ViM with a few plugins  (see repository vim-config)
+* Zsh with prezto         (see repository prezto-config)
+* Git
 
 It has been tested with a Ubuntu trusty64 box.
 
@@ -25,8 +25,16 @@ Usage
 
 Clone this repository and run `git submodule init && git submodule update`, this will pull in the git submodules containing certain configurations (e.g. vimrc files). 
 
+Next, fill in the details for you configuration in manifests/site.pp, which should look something like this:
 
-If you want to check out the configuration in a VM first (recommended), get yourself an ubuntu box with puppet on it and create the following Vagrantfile in the root of your project (don't forget to put in your own box name and url):
+```
+class { "puppetbox": 
+  gitUser   => "Alan Smithee",
+  gitEmail  => "Smithee@spamme.com"
+}
+```
+
+If you want to check out the configuration in a VM first (recommended), get yourself an ubuntu box with puppet on it and create the following Vagrantfile in the root of your project (don't forget to put in your own box name and url - if you have the vm locally use `file://...` relative to the project root):
 
 ```
 VAGRANTFILE_API_VERSION = "2"
@@ -48,4 +56,4 @@ end
 ```
 Omit the vb.gui line if you want to boot the box in headless mode. 
 
-Then run `vagrant up` and keep your fingers crossed.  
+Then run `vagrant up` and keep your fingers crossed.
