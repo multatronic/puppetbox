@@ -1,3 +1,6 @@
 [submodule "modules/vim/files/vim-config"]
 	path = modules/vim/files/vim-config
 	url = https://github.com/multatronic/vim-config
+[submodule "modules/zsh/files/zprezto"]
+	path = modules/zsh/files/zprezto
+	url = git@github.com:multatronic/prezto-config.git
