@@ -15,6 +15,7 @@
     include apache
     include php
     include transmission
+    include qtcreator
 
     class{ 'git' :
         gitUser     => $gitUser,

@@ -5,6 +5,12 @@ class git ($gitUser, $gitEmail) {
         require => Exec['apt-get update']
     }
 
+    # Install tig
+    package { 'tig':
+        ensure => latest,
+        require => Exec['apt-get update']
+    }
+    
     # Set the configuration
     file { "/home/vagrant/.gitconfig":
         ensure => file,

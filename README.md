@@ -6,11 +6,12 @@ Config
 It installs the following:
 * ViM with a few plugins  (see repository vim-config)
 * Zsh with prezto         (see repository prezto-config)
-* Git
+* Git and Tig
 * Apache 
 * PHP5
 * MySQL
 * Transmission bittorrent client
+* QtCreator 
 
 It has been tested with a Ubuntu trusty64 box.
 
