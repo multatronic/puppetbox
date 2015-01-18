@@ -4,7 +4,7 @@
         path => ["/usr/bin", "/bin", "/usr/sbin", "/sbin", "/usr/local/bin", "/usr/local/sbin"]
     }
 
-    # Ensure we are up to date
+    # set command to update repo list
     exec { "apt-get update":
         command => "apt-get update",
     }

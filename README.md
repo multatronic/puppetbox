@@ -1,2 +1,51 @@
-Puppet/Vagrant box with all the stuff I want on it. This project is intended to make my life a little easier when
-migrating to a new computer.
+Puppet/Vagrant box with all the stuff I want on it. This project is intended to make my life a little easier when migrating to a new computer.
+
+Config
+====================
+
+It installs the following:
+* ViM with plugins
+* Zsh with prezto
+
+
+It has been tested with a Ubuntu trusty64 box.
+
+Requirements
+------------
+
+* Puppet
+* Git
+* Vagrant (for testing on VM)
+* A ubuntu VM with puppet on it (for testing on VM )
+
+
+
+Usage
+-----
+
+Clone this repository and run `git submodule init && git submodule update`, this will pull in the git submodules containing certain configurations (e.g. vimrc files). 
+
+
+If you want to check out the configuration in a VM first (recommended), get yourself an ubuntu box with puppet on it and create the following Vagrantfile in the root of your project (don't forget to put in your own box name and url):
+
+```
+VAGRANTFILE_API_VERSION = "2"
+
+Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
+  config.vm.box = [box name]
+  config.vm.box_url = [box url]
+   config.vm.provider :virtualbox do |vb|
+    # Don't boot with headless mode
+    vb.gui = true
+   end
+
+   config.vm.provision :puppet do |puppet|
+     puppet.manifests_path = "manifests"
+     puppet.manifest_file  = "site.pp"
+     puppet.module_path = "modules"
+   end
+end
+```
+Omit the vb.gui line if you want to boot the box in headless mode. 
+
+Then run `vagrant up` and keep your fingers crossed.  
