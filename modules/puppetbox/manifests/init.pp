@@ -12,6 +12,8 @@
     # Set up the packages we want
     include vim
     include zsh
+    include apache
+    include php
 
     class{ 'git' :
         gitUser     => $gitUser,
