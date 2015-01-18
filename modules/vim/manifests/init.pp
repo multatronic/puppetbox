@@ -13,4 +13,11 @@ class vim {
         source => "puppet:///modules/vim/vimrc",
         require => Package['vim'],
     }
+
+    file { "/home/vagrant/.vim": 
+        ensure => directory,
+        recurse => true,
+        source => "puppet:///modules/vim/vim-config",
+        require => Package['vim'], 
+    }
 }
