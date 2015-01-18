@@ -1,4 +1,4 @@
- class puppetbox ($gitUser, $gitEmail) {
+ class puppetbox ($gitUser, $gitEmail, $mysqlRootPass) {
     # Set paths
     Exec {
         path => ["/usr/bin", "/bin", "/usr/sbin", "/sbin", "/usr/local/bin", "/usr/local/sbin"]
@@ -18,5 +18,9 @@
     class{ 'git' :
         gitUser     => $gitUser,
         gitEmail    => $gitEmail,
+    }
+
+    class{ 'mysql':
+        mysqlRootPass => $mysqlRootPass,
     }
 }

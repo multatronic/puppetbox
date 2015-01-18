@@ -9,7 +9,7 @@ It installs the following:
 * Git
 * Apache 
 * PHP5
-
+* MySQL
 
 It has been tested with a Ubuntu trusty64 box.
 
@@ -32,8 +32,9 @@ Next, fill in the details for you configuration in manifests/site.pp, which shou
 
 ```
 class { "puppetbox": 
-  gitUser   => "Alan Smithee",
-  gitEmail  => "Smithee@spam-me.com"
+  gitUser       => "Alan Smithee",
+  gitEmail      => "Smithee@spam-me.com",
+  mysqlRootPass => "niceTry",
 }
 ```
 
