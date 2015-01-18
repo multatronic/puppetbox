@@ -11,7 +11,8 @@ It installs the following:
 * PHP5
 * MySQL
 * Transmission bittorrent client
-* QtCreator 
+* QtCreator
+* Dropbox (just downloads the installer for now)
 
 It has been tested with a Ubuntu trusty64 box.
 
