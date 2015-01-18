@@ -1,5 +1,6 @@
 # don't push VMs
 VM/*.box
 
-.vagrant
+# don't push vagrant stuff
+.vagrant/
 
