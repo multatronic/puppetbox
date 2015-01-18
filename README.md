@@ -16,7 +16,7 @@ It installs the following:
 * VLC
 * Sublime text 3
 * Some custom commands: 
-  * Haste (type haste [file] in the CLI to post the contents of a file to hastebin)
+  * Haste (type `haste [file]` in the CLI to post the contents of a file to hastebin)
 
 It has been tested with a Ubuntu trusty64 box.
 
