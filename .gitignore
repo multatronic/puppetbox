@@ -1,2 +1,5 @@
 # don't push VMs
 VM/*.box
+
+.vagrant
+
