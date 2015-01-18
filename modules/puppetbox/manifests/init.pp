@@ -20,6 +20,7 @@
     include dropbox
     include vlc
     include gnome-encfs-manager
+    include sublime-text
 
     class{ 'git' :
         gitUser     => $gitUser,

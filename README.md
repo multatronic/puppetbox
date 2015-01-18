@@ -1,4 +1,4 @@
-Puppet/Vagrant box with all the stuff I want on it. This project is intended to make my life a little easier when migrating to a new computer.
+Puppet configuration with all the stuff I want in it. This project is intended to make my life a little easier when migrating to a new computer.
 
 Config
 ====================
@@ -13,7 +13,8 @@ It installs the following:
 * Transmission bittorrent client
 * QtCreator
 * Dropbox (just downloads the installer for now)
-* Vlc
+* VLC
+* Sublime text 3
 
 It has been tested with a Ubuntu trusty64 box.
 
