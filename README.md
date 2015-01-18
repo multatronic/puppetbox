@@ -15,6 +15,8 @@ It installs the following:
 * Dropbox (just downloads the installer for now)
 * VLC
 * Sublime text 3
+* Some custom commands: 
+  * Haste (type haste [file] in the CLI to post the contents of a file to hastebin)
 
 It has been tested with a Ubuntu trusty64 box.
 
@@ -24,7 +26,7 @@ Requirements
 * Puppet
 * Git
 * Vagrant (for testing on VM)
-* A ubuntu VM with puppet on it (for testing on VM )
+* An ubuntu VM with puppet on it (for testing on VM )
 
 
 

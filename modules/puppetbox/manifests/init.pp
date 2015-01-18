@@ -21,6 +21,10 @@
     include vlc
     include gnome-encfs-manager
     include sublime-text
+    include build-essential
+    include virtualbox
+    include python
+    include custom-commands
 
     class{ 'git' :
         gitUser     => $gitUser,
