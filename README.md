@@ -3,7 +3,8 @@ Puppet configuration with all the stuff I want in it. This project is intended t
 Config
 ====================
 
-It installs the following:
+The following software is installed through puppet:
+* Build-essential
 * ViM with a few plugins  (see repository vim-config)
 * Zsh with prezto         (see repository prezto-config)
 * Git and Tig
