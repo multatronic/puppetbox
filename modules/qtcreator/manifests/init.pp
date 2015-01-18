@@ -2,6 +2,6 @@ class qtcreator {
 	
 	package { 'qtcreator' :
 		ensure  => latest,
-		require => Package['build-essentials'],
+		require => Package['build-essential'],
 	}
 }
