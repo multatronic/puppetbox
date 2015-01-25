@@ -4,12 +4,12 @@
 [submodule "modules/zsh/files/zprezto"]
 	path = modules/zsh/files/zprezto
 	url =https://github.com/multatronic/prezto-config.git 
-[submodule "modules/apt"]
-	path = modules/apt
-	url =https://github.com/puppetlabs-operations/puppet-puppetlabs_apt.git 
 [submodule "modules/stdlib"]
 	path = modules/stdlib
 	url =https://github.com/puppetlabs/puppetlabs-stdlib.git 
 [submodule "modules/custom-commands/files/haste"]
 	path = modules/custom-commands/files/haste
 	url = https://github.com/multatronic/haste.git
+[submodule "modules/puppetlabs-apt"]
+	path = modules/puppetlabs-apt
+	url = https://github.com/puppetlabs/puppetlabs-apt.git
