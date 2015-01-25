@@ -9,16 +9,16 @@ class zsh {
     define sym_link {
         file { $title:
             ensure  => link,
-            path    => regsubst($title, "^/", "/home/vagrant/."),
-            target  => regsubst($title, "^/", "/home/vagrant/.zprezto/runcoms/"),
+            path    => regsubst($title, "^/", "/home/sabot/."),
+            target  => regsubst($title, "^/", "/home/sabot/.zprezto/runcoms/"),
         }
     }
 
     # copy .zprezto folder and setup symlinks
-    file { "/home/vagrant/.zprezto":
+    file { "/home/sabot/.zprezto":
         ensure  => directory,
-        owner   => "vagrant",
-        group   => "vagrant",
+        owner   => "sabot",
+        group   => "sabot",
         recurse => true,
         source  => "puppet:///modules/zsh/zprezto",
     }
@@ -27,8 +27,8 @@ class zsh {
 
 
     # Set the shell
-    exec { "chsh -s /usr/bin/zsh vagrant":
-        unless  => "grep -E '^vagrant.+:/usr/bin/zsh$' /etc/passwd",
+    exec { "chsh -s /usr/bin/zsh sabot":
+        unless  => "grep -E '^sabot.+:/usr/bin/zsh$' /etc/passwd",
         require => Package['zsh']
     }
 }

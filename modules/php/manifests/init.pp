@@ -9,7 +9,7 @@ class php {
     # Ensure session folder is writable by Vagrant user (under which apache runs)
     file { "/var/lib/php5/session" :
         owner  => "root",
-        group  => "vagrant",
+        group  => "sabot",
         mode   => 0770,
         require => Package["php5"],
     }

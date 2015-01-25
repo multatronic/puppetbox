@@ -6,15 +6,15 @@ class vim {
     }
 
     # copy vim plugins and whatnot
-    file { "/home/vagrant/.vim": 
+    file { "/home/sabot/.vim": 
         ensure => directory,
         recurse => true,
         source => "puppet:///modules/vim/vim-config",
         require => Package['vim'], 
     }
     ->
-    file {"/home/vagrant/.vimrc":
+    file {"/home/sabot/.vimrc":
         ensure => link,
-        target => "/home/vagrant/.vim/.vimrc", 
+        target => "/home/sabot/.vim/.vimrc", 
     }
 }

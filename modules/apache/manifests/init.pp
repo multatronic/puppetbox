@@ -7,8 +7,8 @@ class apache {
 
     # Change user / group
     exec { "apache2-change-user" :
-        command => "echo 'User vagrant' >> /etc/apache2/httpd.conf",
-        unless  => "grep -c 'User vagrant' /etc/apache2/httpd.conf",
+        command => "echo 'User sabot' >> /etc/apache2/httpd.conf",
+        unless  => "grep -c 'User sabot' /etc/apache2/httpd.conf",
         require => Package["apache2"],
         notify  => Service['apache2'],
     }
